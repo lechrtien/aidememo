@@ -3,13 +3,11 @@
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
-        <ul class="sidebar-menu">
-
-             
+        <ul class="sidebar-menu">            
 
             <li class="{{ $request->segment(1) == 'home' ? 'active' : '' }}">
                 <a href="{{ url('/') }}">
-                    <i class="fa fa-wrench"></i>
+                    <i class="fa fa-tachometer"></i>
                     <span class="title">@lang('quickadmin.qa_dashboard')</span>
                 </a>
             </li>
@@ -36,6 +34,7 @@
                         </a>
                     </li>
                 @endcan
+
                 @can('user_access')
                 <li class="{{ $request->segment(2) == 'users' ? 'active active-sub' : '' }}">
                         <a href="{{ route('admin.users.index') }}">
@@ -49,10 +48,11 @@
                 </ul>
             </li>
             @endcan
+
             @can('folder_access')
             <li class="{{ $request->segment(2) == 'folders' ? 'active' : '' }}">
                 <a href="{{ route('admin.folders.index') }}">
-                    <i class="fa fa-gears"></i>
+                    <i class="fa fa-folder"></i>
                     <span class="title">@lang('quickadmin.folders.title')</span>
                 </a>
             </li>
@@ -61,7 +61,7 @@
             @can('file_access')
             <li class="{{ $request->segment(2) == 'files' ? 'active' : '' }}">
                 <a href="{{ route('admin.files.index') }}">
-                    <i class="fa fa-gears"></i>
+                    <i class="fa fa-file"></i>
                     <span class="title">@lang('quickadmin.files.title')</span>
                 </a>
             </li>
@@ -79,14 +79,14 @@
 
             <li class="{{ $request->segment(1) == 'change_password' ? 'active' : '' }}">
                 <a href="{{ route('auth.change_password') }}">
-                    <i class="fa fa-key"></i>
+                    <i class="fa fa-unlock-alt"></i>
                     <span class="title">@lang('quickadmin.qa_change_password')</span>
                 </a>
             </li>
 
             <li>
                 <a href="#logout" onclick="$('#logout').submit();">
-                    <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-sign-out"></i>
                     <span class="title">@lang('quickadmin.qa_logout')</span>
                 </a>
             </li>

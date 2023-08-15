@@ -1,11 +1,48 @@
 <?php
 
 return [
-		'user-management' => [		'title' => 'User management',		'fields' => [		],	],
-		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',		],	],
-		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',		],	],
-		'folders' => [		'title' => 'Folders',		'fields' => [			'name' => 'Name',			'created-by' => 'Created by',		],	],
-		'files' => [		'title' => 'Files',		'fields' => [			'uuid' => 'Uuid',			'folder' => 'Folder id',			'created-by' => 'Created by',			'filename' => 'Filename',		],	],
+	
+	'user-management' => [
+		'title' => 'User management',
+		'fields' => [
+		],
+	],
+	
+	'roles' => [
+		'title' => 'Roles',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+	
+	'users' => [
+		'title' => 'Users',
+		'fields' => [
+			'name' => 'Name',
+			'email' => 'Email',
+			'password' => 'Password',
+			'role' => 'Role',
+			'remember-token' => 'Remember token',
+		],
+	],
+	
+	'folders' => [
+		'title' => 'Folders',
+		'fields' => [
+			'name' => 'Name',
+			'created-by' => 'Created by',
+		],
+	],
+	
+	'files' => [
+		'title' => 'Files',
+		'fields' => [
+			'uuid' => 'Uuid',
+			'folder' => 'Folder id',
+			'created-by' => 'Created by',
+			'filename' => 'Filename',
+		],
+	],
 	'qa_create' => 'Δημιουργία',
 	'qa_save' => 'Αποθήκευση',
 	'qa_edit' => 'Επεξεργασία',
@@ -20,5 +57,5 @@ return [
 	'qa_back_to_list' => 'Επιστροφή στην λίστα',
 	'qa_dashboard' => 'Dashboard',
 	'qa_delete' => 'Διαγραφή',
-	'quickadmin_title' => 'File Storage',
+	'quickadmin_title' => 'Aide Memoire',
 ];

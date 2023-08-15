@@ -4,7 +4,7 @@
 <div class="row h-100 w-100" style="justify-content:center;display:flex" id="login-box">
     <div class="col-md-5">
         <div class="panel panel-default">
-            <div class="panel-heading">{{ ucfirst(config('app.name')) }} @lang('quickadmin.qa_login')</div>
+            <div class="panel-heading" style="text-align: center; font-size: medium;">@lang('quickadmin.qa_login')</div>
             <div class="panel-body">
                 @if (count($errors) > 0)
                 <div class="alert alert-danger">
@@ -19,21 +19,21 @@
                 @endif
 
                 <form class="form-horizontal"
-                      role="form"
-                      method="POST"
-                      action="{{ url('login') }}">
-                    <input type="hidden"
-                           name="_token"
-                           value="{{ csrf_token() }}">
+                    role="form"
+                    method="POST"
+                    action="{{ url('login') }}">
+                    <input type="hidden" name="_token"
+                        value="{{ csrf_token() }}">
 
                     <div class="form-group">
                         <label class="col-md-4 control-label">@lang('quickadmin.qa_email')</label>
 
                         <div class="col-md-6">
                             <input type="email"
-                                   class="form-control"
-                                   name="email"
-                                   value="{{ old('email') }}">
+                                class="form-control"
+                                name="email"
+                                placeholder="Veuillez saisir votre email"
+                                value="{{ old('email') }}">
                         </div>
                     </div>
 
@@ -42,8 +42,9 @@
 
                         <div class="col-md-6">
                             <input type="password"
-                                   class="form-control"
-                                   name="password">
+                            placeholder="Veuillez saisir votre password"
+                                class="form-control"
+                                name="password">
                         </div>
                     </div>
 
@@ -60,7 +61,7 @@
                         <div class="col-md-6 col-md-offset-4">
                             <label>
                                 <input type="checkbox"
-                                       name="remember"> @lang('quickadmin.qa_remember_me')
+                                    name="remember"> @lang('quickadmin.qa_remember_me')
                             </label>
                         </div>
                     </div>

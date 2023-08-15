@@ -1,11 +1,48 @@
 <?php
 
 return [
-		'user-management' => [		'title' => 'User management',		'fields' => [		],	],
-		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',		],	],
-		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',		],	],
-		'folders' => [		'title' => 'Folders',		'fields' => [			'name' => 'Name',			'created-by' => 'Created by',		],	],
-		'files' => [		'title' => 'Files',		'fields' => [			'uuid' => 'Uuid',			'folder' => 'Folder id',			'created-by' => 'Created by',			'filename' => 'Filename',		],	],
+	
+	'user-management' => [
+		'title' => 'User management',
+		'fields' => [
+		],
+	],
+	
+	'roles' => [
+		'title' => 'Roles',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+	
+	'users' => [
+		'title' => 'Users',
+		'fields' => [
+			'name' => 'Name',
+			'email' => 'Email',
+			'password' => 'Password',
+			'role' => 'Role',
+			'remember-token' => 'Remember token',
+		],
+	],
+	
+	'folders' => [
+		'title' => 'Folders',
+		'fields' => [
+			'name' => 'Name',
+			'created-by' => 'Created by',
+		],
+	],
+	
+	'files' => [
+		'title' => 'Files',
+		'fields' => [
+			'uuid' => 'Uuid',
+			'folder' => 'Folder id',
+			'created-by' => 'Created by',
+			'filename' => 'Filename',
+		],
+	],
 	'qa_create' => 'Стварыць',
 	'qa_save' => 'Захаваць',
 	'qa_edit' => 'Рэдагаваць',
@@ -166,5 +203,5 @@ return [
 	'qa_if_you_are_having_trouble' => 'Калі ў вас узніклі праблемы, націснуўшы на',
 	'qa_copy_paste_url_bellow' => 'кнопку, скапіруйце і ўстаўце URL ніжэй у ваш вэб-браўзэр:',
 	'qa_not_approved_title' => 'Ваш акаўнт не падцверджаны',
-	'quickadmin_title' => 'File Storage',
+	'quickadmin_title' => 'Aide Memoire',
 ];

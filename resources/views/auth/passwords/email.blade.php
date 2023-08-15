@@ -1,10 +1,11 @@
 @extends('layouts.auth')
 
 @section('content')
+<br>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Reset password</div>
+                <div class="panel-heading" style="text-align: center; font-size: medium;">Réinitialiser le mot de passe</div>
                 <div class="panel-body">
 
                     @if (session('status'))
@@ -15,7 +16,7 @@
 
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
-                            <strong>Whoops!</strong> There were problems with input:
+                            <strong>Whoops!</strong> Il y a eu des problèmes d\'entrée :
                             <br><br>
                             <ul>
                                 @foreach ($errors->all() as $error)
@@ -49,7 +50,7 @@
                                 <button type="submit"
                                         class="btn btn-primary"
                                         style="margin-right: 15px;">
-                                    Reset password
+                                        Réinitialiser le mot de passe
                                 </button>
                             </div>
                         </div>

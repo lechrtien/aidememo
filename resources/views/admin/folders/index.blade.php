@@ -3,6 +3,7 @@
 
 @section('content')
     <h3 class="page-title">@lang('quickadmin.folders.title')</h3>
+    
     @can('folder_create')
         <p>
             <a href="{{ route('admin.folders.create') }}" class="btn btn-success">@lang('quickadmin.qa_add_new')</a>
@@ -19,11 +20,15 @@
 
     @can('folder_delete')
         <p>
-        <ul class="list-inline">
-            <li><a href="{{ route('admin.folders.index') }}" style="{{ request('show_deleted') == 1 ? '' : 'font-weight: 700' }}">@lang('quickadmin.qa_all')</a></li>
-            |
-            <li><a href="{{ route('admin.folders.index') }}?show_deleted=1" style="{{ request('show_deleted') == 1 ? 'font-weight: 700' : '' }}">@lang('quickadmin.qa_trash')</a></li>
-        </ul>
+            <ul class="list-inline">
+                <li>
+                    <a href="{{ route('admin.folders.index') }}" style="{{ request('show_deleted') == 1 ? '' : 'font-weight: 700' }}">@lang('quickadmin.qa_all')</a>
+                </li>
+                |
+                <li>
+                    <a href="{{ route('admin.folders.index') }}?show_deleted=1" style="{{ request('show_deleted') == 1 ? 'font-weight: 700' : '' }}">@lang('quickadmin.qa_trash')</a>
+                </li>
+            </ul>
         </p>
     @endcan
 

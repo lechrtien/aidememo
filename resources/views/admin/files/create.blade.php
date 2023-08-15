@@ -117,7 +117,7 @@ console.log(totalCount);
                     done: function (e, data) {
                         $.each(data.result.files, function (index, file) {
                             var $line = $($('<p/>', {class: "form-group"}).html(file.name + ' (' + file.size + ' bytes)').appendTo($parent.find('.files-list')));
-                            $line.append('<a href="#" class="btn btn-xs btn-danger remove-file">Remove</a>');
+                            $line.append('<a href="#" class="btn btn-xs btn-danger remove-file">Enlever</a>');
                             $line.append('<input type="hidden" name="' + $this.data('bucket') + '_id[]" value="' + file.id + '"/>');
                             if ($parent.find('.' + $this.data('bucket') + '-ids').val() != '') {
                                 $parent.find('.' + $this.data('bucket') + '-ids').val($parent.find('.' + $this.data('bucket') + '-ids').val() + ',');

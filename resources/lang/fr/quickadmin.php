@@ -1,11 +1,48 @@
 <?php
 
 return [
-		'user-management' => [		'title' => 'User management',		'fields' => [		],	],
-		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',		],	],
-		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',		],	],
-		'folders' => [		'title' => 'Folders',		'fields' => [			'name' => 'Name',			'created-by' => 'Created by',		],	],
-		'files' => [		'title' => 'Files',		'fields' => [			'uuid' => 'Uuid',			'folder' => 'Folder id',			'created-by' => 'Created by',			'filename' => 'Filename',		],	],
+	
+	'user-management' => [
+		'title' => 'User management',
+		'fields' => [
+		],
+	],
+	
+	'roles' => [
+		'title' => 'Roles',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+	
+	'users' => [
+		'title' => 'Users',
+		'fields' => [
+			'name' => 'Name',
+			'email' => 'Email',
+			'password' => 'Password',
+			'role' => 'Role',
+			'remember-token' => 'Remember token',
+		],
+	],
+	
+	'folders' => [
+		'title' => 'Folders',
+		'fields' => [
+			'name' => 'Name',
+			'created-by' => 'Created by',
+		],
+	],
+	
+	'files' => [
+		'title' => 'Files',
+		'fields' => [
+			'uuid' => 'Uuid',
+			'folder' => 'Folder id',
+			'created-by' => 'Created by',
+			'filename' => 'Filename',
+		],
+	],
 	'qa_create' => 'Créer',
 	'qa_save' => 'Enregistrer',
 	'qa_edit' => 'Modifier',
@@ -230,5 +267,5 @@ return [
 	'qa_csvImport' => 'Importer CSV.',
 	'qa_csv_file_to_import' => 'Fichier CSV à importer.',
 	'qa_parse_csv' => 'Analyser CSV.',
-	'quickadmin_title' => 'File Storage',
+	'quickadmin_title' => 'Aide Memoire',
 ];

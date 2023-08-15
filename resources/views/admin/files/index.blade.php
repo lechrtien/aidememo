@@ -47,8 +47,8 @@
                             <th style="text-align:center;"><input type="checkbox" id="select-all"/></th>@endif
                     @endcan
 
-                    <th>Filename</th>
-                    <th>Folder</th>
+                    <th>Nom du Fichier</th>
+                    <th>Nom du Dossier</th>
                     @if( request('show_deleted') == 1 )
                         <th>&nbsp;</th>
                     @else
@@ -108,7 +108,7 @@
 
                             @else
                                 <td>
-                                    <a href="{{url('/admin/' . $file->uuid . '/download')}}" class="btn btn-xs btn-success">Download</a>
+                                    <a href="{{url('/admin/' . $file->uuid . '/download')}}" class="btn btn-xs btn-success">Télécharger</a>
                                     @can('file_delete')
                                         {!! Form::open(array(
                                                                                 'style' => 'display: inline-block;',

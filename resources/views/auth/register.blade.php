@@ -5,7 +5,7 @@
         <div class="row w-100" style="justify-content:center;display:flex">
             <div class="col-md-5">
                 <div class="panel panel-default">
-                    <div class="panel-heading">@lang('quickadmin.qa_register')</div>
+                    <div class="panel-heading" style="text-align: center; font-size: medium;">@lang('quickadmin.qa_register')</div>
                     <div class="panel-body">
                         <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                             {{ csrf_field() }}
@@ -14,7 +14,7 @@
                                 <label for="name" class="col-md-4 control-label">@lang('quickadmin.qa_name')</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                    <input placeholder="Veuillez saisir votre nom" id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
                                     @if ($errors->has('name'))
                                         <span class="help-block">
@@ -28,7 +28,7 @@
                                 <label for="email" class="col-md-4 control-label">@lang('quickadmin.qa_email')</label>
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                    <input placeholder="Veuillez saisir votre email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                                     @if ($errors->has('email'))
                                         <span class="help-block">
@@ -42,7 +42,7 @@
                                 <label for="password" class="col-md-4 control-label">@lang('quickadmin.qa_password')</label>
 
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control" name="password" required>
+                                    <input placeholder="Veuillez saisir votre mot de passe" id="password" type="password" class="form-control" name="password" required>
 
                                     @if ($errors->has('password'))
                                         <span class="help-block">
@@ -56,7 +56,7 @@
                                 <label for="password-confirm" class="col-md-4 control-label">@lang('quickadmin.qa_confirm_password')</label>
 
                                 <div class="col-md-6">
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                    <input placeholder="Veuillez saisir votre confirmez votre mot de passe" id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                                 </div>
                             </div>
 
